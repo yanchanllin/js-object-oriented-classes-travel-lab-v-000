@@ -2,15 +2,13 @@ class Driver{
   constructor(name, startDate){
     this.name = name;
     this.startDate = new Date(startDate);
-    // console.log(this.startDate.getUTCFullYear());
-    // console.log(this.startDate.getFullYear(););
 }
   startDate() {
     return Date()
   }
   yearsExperienceFromBeginningOf(endDate) {
       return new Date(endDate, 1, 1).getYear() - this.startDate.getYear() -1
-  
+
     }
 }
 
