@@ -8,9 +8,10 @@ class Driver{
   startDate() {
     return Date()
   }
-  yearsExperienceFromBeginningOf(endDate){
-    return endDate - this.startDate.getUTCFullYear();
-  }
+  yearsExperienceFromBeginningOf(endDate) {
+      return new Date(endDate, 1, 1).getYear() - this.startDate.getYear() -1
+  
+    }
 }
 
 class Route{
